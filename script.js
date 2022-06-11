@@ -23,7 +23,7 @@ let glitchTeam = $.getJSON("glitchTeam.json").done(function(data){
       error: function(){
           
       },
-      timeout: 5000,
+      
   
       
       success: function(data){
