@@ -4,7 +4,7 @@ let glitchTeam = $.getJSON("glitchTeam.json").done(function(data){
     $.each(data.members,function(a,b){
         console.log("data a:",a,"and data b:",b);
   
-        $('#glitchTeam').append(`
+        $('#glitch-team').append(`
         <h2>${b.name}</h2>
         <h5>${b.position}</h5>
         <p>${b.bio}</p>
@@ -18,7 +18,7 @@ let glitchTeam = $.getJSON("glitchTeam.json").done(function(data){
       $.ajax({url: "glitchTeam.json", 
       beforeSend: function() {
           let loadText = $("<h2></h2>").text("Loading...");
-          $(`div#glitchTeam`).append(loadText);
+          $(`div#glitch-team`).append(loadText);
       },
       error: function(){
           
@@ -27,11 +27,11 @@ let glitchTeam = $.getJSON("glitchTeam.json").done(function(data){
   
       
       success: function(data){
-          $(`div#glitchTeam`).empty();
+          $(`div#glitch-team`).empty();
           $.each(data.members,function(a,b){
               console.log("data a:",a,"and data b:",b);
         
-              $('#glitchTeam').append(`
+              $('#glitch-taeam').append(`
               <h2>${b.name}</h2>
               <h5>${b.position}</h5>
               <p>${b.bio}</p>
