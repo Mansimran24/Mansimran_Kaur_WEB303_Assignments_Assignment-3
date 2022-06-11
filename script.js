@@ -12,7 +12,7 @@ let glitchTeam = $.getJSON("glitchTeam.json").done(function(data){
     })  ;
   
   });
-  console.log("the tglitchTeam :", glitchTeam);
+  console.log("the glitchTeam :", glitchTeam);
   
   $(function usingAjax() {
       $.ajax({url: "glitchTeam.json", 
